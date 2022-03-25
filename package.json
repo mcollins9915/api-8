@@ -1,0 +1,22 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "Avatar API",
+  "main": "server.js",
+  "dependencies": {
+    "daemon": "^1.1.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "init": "^0.1.2",
+    "node-fetch": "^3.2.3",
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Barty",
+  "license": "ISC"
+}

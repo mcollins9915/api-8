@@ -1,0 +1,43 @@
+<%- include('../partials/header'); %>
+
+<main class="main main-single container">
+    <h2 class="main-h2"><%= data.name %></h2>
+    
+    <section class="section section-single d-flex justify-content-between">
+        <figure class="figure figure-single">
+            <img src="<%= data.image %>" alt="<%= data.title %>" class="img-fluid">
+        </figure>
+        <aside class="aside">
+            <h3 class="single-h3">Age</h3>
+            <ul class="single-ul list-group">
+                <% for(let i = 0; i < data.bio.ages.length; i++) { %>
+                            <li class="single-li list-group-item"><%= data.bio.ages[i] %></li>
+
+               <% } %>
+            </ul>
+
+            <h3 class="single-h3">Altern</h3>
+            <ul class="single-ul list-group">
+                <% for(let i = 0; i < data.bio.alternativeNames.length; i++) { %>
+                            <li class="single-li list-group-item"><%= data.bio.alternativeNames[i] %></li>
+
+               <% } %>
+            </ul>
+            <h3 class="single-h3">Died</h3>
+            <ul class="single-ul list-group">
+                <% for(let i = 0; i < data.bio.died.length; i++) { %>
+                            <li class="single-li list-group-item"><%= data.bio.died[i] %></li>
+
+               <% } %>
+            </ul>
+            <h3 class="single-h3">Position</h3>
+            <ul class="single-ul list-group">
+                <% for(let i = 0; i < data.bio.position.length; i++) { %>
+                            <li class="single-li list-group-item"><%= data.bio.position[i] %></li>
+
+               <% } %>
+            </ul> 
+        </aside>
+    </section>
+</main>
+<%- include('../partials/footer'); %>
